@@ -1,0 +1,48 @@
+﻿<Window x:Class="Video_Store.LoginPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Video_Store"
+        mc:Ignorable="d"
+        Title="LoginPage" Height="334.647" Width="423.141" Background="#FF323232" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,2,-1" Background="#FF4D4D4D" Height="305" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Video Store" HorizontalAlignment="Left" Margin="96,10,0,0" VerticalAlignment="Top" Height="56" Width="239" FontSize="36" FontFamily="Broadway" Foreground="White" FontStyle="Italic">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Label x:Name="Username_lbl" Content="Username" HorizontalAlignment="Left" Margin="58,98,0,0" VerticalAlignment="Top" Foreground="White" Height="26" Width="63">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <TextBox x:Name="Username_txtbox" HorizontalAlignment="Left" Height="23" Margin="147,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Foreground="White" Background="#FF616161"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="58,152,0,0" VerticalAlignment="Top" Foreground="White" Height="26" Width="60">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <TextBox x:Name="Password_txtbox" HorizontalAlignment="Left" Height="23" Margin="147,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Foreground="White" Background="#FF6E6B6B"/>
+        <Button x:Name="Login_button" Content="Login" HorizontalAlignment="Left" Margin="244,216,0,0" VerticalAlignment="Top" Width="63" Click="Login_click" Foreground="White" Background="#FF363636" Height="23">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+        <Label Content="Don't Have A Account ?" HorizontalAlignment="Left" Margin="58,213,0,0" VerticalAlignment="Top" Foreground="White" Height="26" Width="135">
+            <Label.Effect>
+                <DropShadowEffect/>
+            </Label.Effect>
+        </Label>
+        <Button Content="Register Now" HorizontalAlignment="Left" Margin="71,244,0,0" VerticalAlignment="Top" Width="83" Click="Button_Click_1" Foreground="White" Background="#FF363636" Height="23">
+            <Button.Effect>
+                <DropShadowEffect/>
+            </Button.Effect>
+        </Button>
+
+    </Grid>
+</Window>
